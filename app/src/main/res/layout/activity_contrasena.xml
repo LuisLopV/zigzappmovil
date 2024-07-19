@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperación de la cuenta"
+        android:layout_marginTop="110dp"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recupera tu cuenta de ZigZapp"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"/>
+     <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/correoenvio"/>
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="40dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/azapp"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar correo" />
+
+    <ImageView
+        android:id="@+id/ivLogo2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/zigzappcom"/>
+
+
+</LinearLayout>

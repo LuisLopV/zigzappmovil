@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo3"
+    tools:context=".DatosFragment">
+
+    <ImageButton
+        android:layout_marginTop="50dp"
+        android:background="@color/transparent"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/buttonBack2"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:src="@drawable/atrasn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/inviteFriendsText"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/azapp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="60dp"
+            android:textSize="33dp"
+            android:text="Mis Datos" />
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/perfil" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/inviteFriendsText2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/azapp"
+        android:layout_marginTop="230dp"
+        android:textSize="18dp"
+        android:text="Recuerda que tus datos son privados" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="380dp"
+        android:layout_marginTop="330dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="800dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_corners"
+        android:elevation="8dp"
+        android:padding="16dp">
+
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/nombre"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/misdatos" />
+
+            <TextView
+                android:id="@+id/Texto1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/azapp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/nombre"
+                android:textSize="22dp"
+                android:text="Nombre(s) y apellido(s)" />
+
+            <TextView
+                android:id="@+id/Texto2"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:longClickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/Texto1"
+                android:layout_toRightOf="@id/nombre"
+                android:textSize="18dp"
+                android:text="Pepito Perez." />
+
+            <ImageView
+                android:id="@+id/numero"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/nombre"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/Texto3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/azapp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/Texto2"
+                android:layout_toRightOf="@id/numero"
+                android:textSize="22dp"
+                android:text="Nùmero de telèfono" />
+
+            <TextView
+                android:id="@+id/Texto4"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:longClickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/Texto3"
+                android:layout_toRightOf="@id/numero"
+                android:textSize="18dp"
+                android:text="+57 320******61" />
+
+            <ImageView
+                android:id="@+id/corre"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/numero"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/correo" />
+
+            <TextView
+                android:id="@+id/Texto5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/azapp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/Texto4"
+                android:layout_toRightOf="@id/corre"
+                android:textSize="22dp"
+                android:text="Nùmero de telèfono" />
+
+            <TextView
+                android:id="@+id/Texto6"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:longClickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/Texto5"
+                android:layout_toRightOf="@id/numero"
+                android:textSize="18dp"
+                android:text="+57 320******61" />
+
+
+            <ImageView
+                android:id="@+id/rh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/corre"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/rh" />
+
+            <TextView
+                android:id="@+id/Texto7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/azapp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/Texto6"
+                android:layout_toRightOf="@id/corre"
+                android:textSize="22dp"
+                android:text="Rh" />
+
+            <TextView
+                android:id="@+id/Texto8"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:longClickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/Texto7"
+                android:layout_toRightOf="@id/numero"
+                android:textSize="18dp"
+                android:text="O+" />
+
+            <ImageView
+                android:id="@+id/cedula"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/rh"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/rh" />
+
+            <TextView
+                android:id="@+id/Texto9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/azapp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/Texto8"
+                android:layout_toRightOf="@id/corre"
+                android:textSize="22dp"
+                android:text="Cedula" />
+
+            <TextView
+                android:id="@+id/Texto10"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:longClickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/Texto9"
+                android:layout_toRightOf="@id/numero"
+                android:textSize="18dp"
+                android:text="1.061.246.236" />
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

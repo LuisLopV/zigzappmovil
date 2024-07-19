@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fondo2"
+    tools:context=".RegisterActivity">
+
+    <ImageButton
+        android:layout_marginTop="25dp"
+        android:background="@color/transparent"
+        android:id="@+id/buttonBack2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/atras"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos Personales"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Ingresa tus datos básicos"
+        android:textSize="19sp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/primer_nombre"
+        android:textAlignment="center"
+        android:textColor="@color/azapp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:hint="Primer Nombre" />
+
+    <EditText
+        android:id="@+id/segundo_nombre"
+        android:textAlignment="center"
+        android:textColor="@color/azapp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/edittext_background"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:hint="Segundo Nombre" />
+
+    <EditText
+        android:id="@+id/primer_apellido"
+        android:textAlignment="center"
+        android:textColor="@color/azapp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/edittext_background"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:hint="Primer Apellido" />
+
+    <EditText
+        android:id="@+id/segundo_apellido"
+        android:textAlignment="center"
+        android:textColor="@color/azapp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/edittext_background"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:hint="Segundo Apellido" />
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="16dp">
+
+        <Spinner
+            android:id="@+id/rh"
+            android:hint="Rh"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:background="@drawable/spinner_background"
+            android:layout_marginRight="2dp"/>
+
+        <EditText
+            android:id="@+id/cedula"
+            android:textAlignment="center"
+            android:textColor="@color/azapp"
+            android:background="@drawable/edittext_background"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:hint="Cédula" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/dia"
+            android:textAlignment="center"
+            android:textColor="@color/azapp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginRight="5dp"
+            android:layout_width="123dp"
+            android:layout_height="36dp"
+
+            android:hint="Día" />
+
+        <EditText
+            android:id="@+id/mes"
+            android:textAlignment="center"
+            android:textColor="@color/azapp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginRight="5dp"
+            android:layout_width="123dp"
+            android:layout_height="36dp"
+
+            android:hint="Mes" />
+
+        <EditText
+            android:id="@+id/anio"
+            android:textAlignment="center"
+            android:textColor="@color/azapp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginRight="5dp"
+            android:layout_width="123dp"
+            android:layout_height="36dp"
+            android:hint="Año" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/upload_photo"
+        android:backgroundTint="@color/azapp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto"
+        android:drawableLeft="@android:drawable/ic_menu_camera" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/azapp"
+        android:text="Es importante para nosotros contar con tus datos iniciales..."
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/continuar"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/azapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar" />
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="139dp"
+        android:src="@drawable/zigzappb"/>
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZIG ZAPP"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rápido, seguro y eficaz!"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Bienvenido"
+        android:textColor="@color/white"
+        android:textSize="36sp"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:hint="Correo Electronico"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/azapp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="Contraseña"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/azapp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:textSize="20dp"
+        android:backgroundTint="@color/azapp"
+        android:textColor="@color/white"
+        android:text="Iniciar" />
+
+    <Button
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:textSize="14dp"
+        android:backgroundTint="@color/transparent"
+        android:textColor="@color/azapp"
+        android:text="Olvide mi contraseña" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="90dp"
+        android:textSize="20dp"
+        android:backgroundTint="@color/azapp"
+        android:textColor="@color/white"
+        android:text="Registrarme" />
+
+</LinearLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo3"
+        tools:context=".PerfilFragment">
+
+        <ImageButton
+            android:layout_marginTop="50dp"
+            android:background="@color/transparent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/buttonBack2"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cerrar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/inviteFriendsText"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/azapp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="35dp"
+                android:textSize="33dp"
+                android:text="Bienvenido a tu perfil" />
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="90dp"
+                android:src="@drawable/perfil" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/inviteFriendsText2"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/azapp"
+            android:layout_marginTop="230dp"
+            android:textSize="18dp"
+            android:text="Pepito Perez ¿Listo para viajar rápido, seguro y eficaz?" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="380dp"
+            android:layout_marginTop="330dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="800dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rounded_corners"
+            android:elevation="8dp"
+            android:padding="16dp">
+
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/link"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorAccent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/misdatos" />
+
+                <TextView
+                    android:id="@+id/Texto1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/azapp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/link"
+                    android:textSize="22dp"
+                    android:text="Mis Datos" />
+
+                <TextView
+                    android:id="@+id/Texto2"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:longClickable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/Texto1"
+                    android:layout_toRightOf="@id/link"
+                    android:textSize="18dp"
+                    android:text="Nombre, Numero Telefonico." />
+
+                <ImageButton
+                    android:id="@+id/btngo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/Texto2"
+                    android:src="@drawable/flechago" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp">
+
+                <ImageView
+                    android:id="@+id/contra"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorAccent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/candado" />
+
+                <TextView
+                    android:id="@+id/Texto3"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/azapp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/contra"
+                    android:textSize="20dp"
+                    android:text="Cambiar Contraseña" />
+
+                <TextView
+                    android:id="@+id/Texto4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/Texto3"
+                    android:layout_toRightOf="@id/contra"
+                    android:textSize="18dp"
+                    android:text="Siempre sera seguro" />
+
+                <ImageView
+                    android:id="@+id/go2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/Texto4"
+                    android:src="@drawable/flechago" />
+
+                <ImageView
+                    android:id="@+id/eliminar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorAccent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/contra"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/eliminarcuenta" />
+
+                <TextView
+                    android:id="@+id/Texto5"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/azapp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/go2"
+                    android:layout_toRightOf="@id/eliminar"
+                    android:textSize="20dp"
+                    android:text="Eliminar Cuenta" />
+
+                <TextView
+                    android:id="@+id/Texto6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@id/Texto5"
+                    android:layout_toRightOf="@id/eliminar"
+                    android:textSize="18dp"
+                    android:text="Se perderan todos tus datos." />
+
+                <ImageView
+                    android:id="@+id/go3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_below="@id/go2"
+                    android:layout_toRightOf="@id/Texto4"
+
+                    android:src="@drawable/flechago" />
+
+
+
+                <ImageView
+                    android:id="@+id/qr2"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_below="@id/Texto6"
+                    android:src="@drawable/letraszig" />
+
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>

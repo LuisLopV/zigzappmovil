@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".LoginActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imagenView"
+        android:layout_width="185dp"
+        android:layout_height="185dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:src="@drawable/logo" />
+
+
+    <Button
+        android:id="@+id/btn_already_user"
+        android:layout_width="290dp"
+        android:layout_height="58dp"
+        android:layout_centerInParent="true"
+        android:text="Ya eres usuario"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/azapp"
+        android:textSize="18dp"
+        android:layout_below="@id/imagenView"
+        android:layout_marginTop="68dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_new_user"
+        android:layout_height="58dp"
+        android:layout_width="290dp"
+        android:text="Eres nuevo"
+        android:textColor="@color/azapp"
+        android:textSize="20dp"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/btn_already_user"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
